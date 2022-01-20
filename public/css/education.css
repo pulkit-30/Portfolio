@@ -6,7 +6,7 @@
   color: var(--secondary-color);
   z-index: 0;
 }
-.education h1{
+.education h1 {
   font-size: 45px;
 }
 .education::after {
@@ -39,13 +39,12 @@
   line-height: 2;
 }
 
-
 .edu-para:nth-child(5) {
-  top: 120px ;
+  top: 150px;
 }
 .edu-para:nth-child(4) {
-  top: 340px ;
+  top: 390px;
 }
 .edu-para:nth-child(3) {
-  top: 550px;
+  top: 630px;
 }

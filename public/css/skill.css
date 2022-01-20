@@ -12,20 +12,20 @@
   padding: 0px 70px;
   margin: 40px;
 
-justify-content: flex-start;
+  justify-content: flex-start;
 }
 .skill-list li .bullet {
- height: 50px;
- width: 50px;
- background-color: black;
- color: white;
- position: absolute;
- left: 0;
- border-radius:50% ;
- -webkit-border-radius:50% ;
- -moz-border-radius:50% ;
- -ms-border-radius:50% ;
- -o-border-radius:50% ;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .skill-para {
   color: gray;
