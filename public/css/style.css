@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -7,12 +7,12 @@
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Comfortaa", cursive;
-  --heading-font:'Raleway', sans-serif;
+  --heading-font: "Raleway", sans-serif;
   --primary-color: rgb(12, 12, 12);
   --secondary-color: #fff;
   --gradient-primary-color: #009fff;
   --gradient-secondary-color: #ec2f4b;
-  --text-color :rgb(29, 29, 29);
+  --text-color: rgb(29, 29, 29);
 }
 .flex {
   display: flex;
@@ -81,7 +81,7 @@ footer {
   font-weight: bolder;
   margin: auto;
 }
-.btn{
+.btn {
   cursor: pointer;
   border: 3px solid transparent;
   border-image: linear-gradient(
