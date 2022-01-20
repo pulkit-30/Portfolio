@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Comfortaa", cursive;
+  --heading-font:'Raleway', sans-serif;
+  --primary-color: rgb(12, 12, 12);
+  --secondary-color: #fff;
+  --gradient-primary-color: #009fff;
+  --gradient-secondary-color: #ec2f4b;
+  --text-color :rgb(29, 29, 29);
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.s-btw {
+  justify-content: space-between;
+}
+.s-eve {
+  justify-content: space-evenly;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  border-bottom: 8px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    var(--gradient-primary-color) 0%,
+    var(--gradient-secondary-color) 100%
+  );
+  border-image-slice: 1;
+}
+p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+main {
+  min-height: 88.5vh;
+  /* border-bottom: 5px solid black; */
+}
+section {
+  min-height: 88vh;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 100px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-color),
+    var(--gradient-secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-text {
+  font-size: 50px;
+  font-family: var(--secondary-font);
+  font-weight: bolder;
+  margin: auto;
+}
+.btn{
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    var(--gradient-primary-color) 0%,
+    var(--gradient-secondary-color) 100%
+  );
+  border-image-slice: 1;
+  background: none;
+  padding: 10px 20px;
+  width: 200px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-color),
+    var(--gradient-secondary-color)
+  );
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+}

@@ -1,0 +1,28 @@
+<%- include('./components/header.ejs') %>
+<div class="loader" id="loader"></div>
+<section class="section contact flex s-eve">
+  <div>
+    <h1 class="gradient-text heading-text">Contact Me</h1>
+
+    <p class="about-para para">
+      I'm always keen to chat with other developers/designer or product people.
+      Be it about an upcoming project or just to say hi, feel free to contact
+      me.
+    </p>
+  </div>
+  <div>
+    <form action="/contact/newContact" class="flex column" method="post">
+      <input type="text" name="Name" placeholder="Name" />
+      <input type="text" name="Email" placeholder="Email" />
+      <textarea
+        name="Message"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+      ></textarea>
+      <button class="btn gradient-text" type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+<%- include('./components/footer.ejs') %>

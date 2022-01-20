@@ -1,0 +1,16 @@
+.social {
+  width: 30%;
+}
+.social a {
+  font-size: 25px;
+  color: var(--secondary-color);
+}
+.social a:hover {
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-color),
+    var(--gradient-secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

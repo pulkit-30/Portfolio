@@ -1,0 +1,47 @@
+.navbar {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0;
+}
+.nav_left {
+  width: 20%;
+  font-size: 28px;
+}
+.navbar ul {
+  width: 40%;
+}
+.navbar ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-color),
+    var(--gradient-secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+.b-nav {
+  background-color: var(--primary-color);
+}

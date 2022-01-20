@@ -1,0 +1,50 @@
+.education {
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  z-index: 0;
+}
+.education h1{
+  font-size: 45px;
+}
+.education::after {
+  content: "";
+  background-image: url(https://user-images.githubusercontent.com/76155456/150201205-f4664f90-e809-4173-a1c4-e91e1a0786b3.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+.timeline {
+  height: 70vh;
+  position: relative;
+  right: 100px;
+}
+.edu-para {
+  position: absolute;
+  width: 800px;
+  margin: 50px;
+  padding: 10px;
+  left: 700px;
+  top: 0;
+  line-height: 2;
+}
+
+
+.edu-para:nth-child(5) {
+  top: 150px ;
+}
+.edu-para:nth-child(4) {
+  top: 390px ;
+}
+.edu-para:nth-child(3) {
+  top: 630px;
+}
