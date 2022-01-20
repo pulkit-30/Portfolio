@@ -1,4 +1,5 @@
 .env
 node_modules/
-utils/
 package-lock.json
+npm-debug.log
+.DS_Store
