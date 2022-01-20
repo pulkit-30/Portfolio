@@ -7,6 +7,7 @@ const DB_Connection = require("./utils/connection");
 const home = require("./router/home");
 const contact = require("./router/contact");
 const resume = require("./router/resume");
+const project = require("./router/project");
 const success = require("./router/success");
 const failure = require("./router/failure");
 
@@ -31,6 +32,7 @@ DB_Connection()
 app.use("/", home);
 app.use("/contact", contact);
 app.use("/resume", resume);
+app.use("/projects", project);
 app.use("/success", success);
 app.use("/failure", failure);
 

@@ -19,11 +19,11 @@ const handelScroll = () => {
     } else if (window.pageYOffset >= 2204) {
       changeColor(2);
     }
-  }
-  if (window.location.pathname === "/resume") {
+  } else if (window.location.pathname === "/projects") {
+    changeColor(3);
+  } else if (window.location.pathname === "/resume") {
     changeColor(4);
-  }
-  if (window.location.pathname === "/contact") {
+  } else if (window.location.pathname === "/contact") {
     changeColor(5);
   }
 };
