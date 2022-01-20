@@ -3,7 +3,7 @@ const DB_Contact = require("../db/Message");
 const userVerification = require("../utils/userVerification");
 
 route.get("/", (req, res) => {
-  res.render("contact",{title:'Contact Pulkit'});
+  res.render("contact", { title: "Contact Pulkit" });
 });
 route.post("/newContact", (req, res) => {
   DB_Contact.newConatct(req.body, res);

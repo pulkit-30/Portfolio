@@ -5,8 +5,8 @@ const loader = doc.getElementById("loader");
 const skill_list = document.querySelectorAll(".skill-list");
 
 const HandelNavBarDisplay = () => {
-  if (window.pageYOffset > 680) navbar.classList.add("b-nav");
-  if (window.pageYOffset < 680) navbar.classList.remove("b-nav");
+  if (window.pageYOffset > 380) navbar.classList.add("b-nav");
+  if (window.pageYOffset < 380) navbar.classList.remove("b-nav");
 };
 
 HandelNavBarDisplay();
