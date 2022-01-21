@@ -1,12 +1,15 @@
 .education {
   position: relative;
-  min-height: 90vh;
+  height: 98vh;
   width: 100%;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   z-index: 0;
+  overflow: hidden;
 }
 .education h1 {
+  margin: auto;
+  text-align: center;
   font-size: 45px;
 }
 .education::after {
@@ -29,16 +32,40 @@
   right: 100px;
 }
 .edu-para {
-  font-size: 15px;
+  font-size: 17px;
   position: absolute;
   width: 800px;
   margin: 50px;
   padding: 10px;
-  left: 700px;
+  left: 40%;
   top: 0;
   line-height: 2;
+  color: var(--secondary-color);
+  text-align: left;
 }
 
+.edu-para:nth-child(5) {
+  top: 200px;
+}
+.edu-para:nth-child(4) {
+  top: 450px;
+}
+.edu-para:nth-child(3) {
+  top: 690px;
+}
+@media screen and (max-width:1385px) {
+  .timeline{
+    height: 78vh;
+  }
+  .edu-para {
+    left: 35% !important;
+    font-size: 15px;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
 .edu-para:nth-child(5) {
   top: 150px;
 }
@@ -47,4 +74,26 @@
 }
 .edu-para:nth-child(3) {
   top: 630px;
+}
+}
+@media screen and (max-width:912px) {
+  .edu-para {
+    left: 25% !important;
+  }
+}
+@media screen and (max-width:674px) {
+  .timeline{
+    left: 10%;
+  }
+  .edu-para{
+    left: 40% !important;
+  }
+}
+@media screen and (max-width:425px) {
+  .timeline{
+    left: 2%;
+  }
+  .edu-para{
+    left: 20% !important;
+  }
 }

@@ -3,7 +3,21 @@ const navbar = document.getElementById("nav");
 const know_more = doc.getElementById("Know-More");
 const loader = doc.getElementById("loader");
 const skill_list = document.querySelectorAll(".skill-list");
+const hamburger = document.querySelector('.hamburger')
+const handelMenuDisplay = ()=>{
+  doc.querySelectorAll('.line').forEach(line=>{
+    line.classList.toggle('active-line')
+  })
+  doc.querySelector('.ham-list-menu').classList.toggle('menu-slide')
+  doc.querySelector('body').classList.toggle('prevent-scroll')
+  doc.querySelector('.backdrop').classList.toggle('no-display')
+  doc.querySelectorAll('.navbar .menu-slide li').forEach(li=>{
+    li.addEventListener('click',handelMenuDisplay);
+  })
+}
+hamburger.addEventListener('click',handelMenuDisplay)
 
+doc.querySelector('.backdrop').addEventListener('click',handelMenuDisplay)
 const HandelNavBarDisplay = () => {
   if (window.pageYOffset > 380) navbar.classList.add("b-nav");
   if (window.pageYOffset < 380) navbar.classList.remove("b-nav");
@@ -33,3 +47,4 @@ skill_list.forEach((e) => {
     e.children[i].children[0].textContent = e.children[i].textContent.trim()[0];
   }
 });
+

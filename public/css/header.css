@@ -20,6 +20,11 @@
 }
 .navbar ul {
   width: 40%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 .navbar ul li {
   text-decoration: none;
@@ -44,4 +49,77 @@
 }
 .b-nav {
   background-color: var(--primary-color);
+}
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:1344px) {
+  .nav_left{
+    width: 30%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  .navbar ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    font-size: 20px;
+    transform: translateX(100vh);
+    -webkit-transform: translateX(100vh);
+    -moz-transform: translateX(100vh);
+    -ms-transform: translateX(100vh);
+    -o-transform: translateX(100vh);
+}
+.menu-slide{
+  transform: translateX(0) !important;
+  -webkit-transform: translateX(0) !important;
+  -moz-transform: translateX(0) !important;
+  -ms-transform: translateX(0) !important;
+  -o-transform: translateX(0) !important;
+}
+.hamburger{
+  display: flex;
+  flex-direction: column;
+padding: 10px;
+z-index: 1000;
+}
+.line{
+  width: 30px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: 5px 0px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.active-line:nth-child(1){
+  transform: rotate(45deg) translateY(9px);
+  -webkit-transform: rotate(45deg) translateY(9px);
+  -moz-transform: rotate(45deg) translateY(9px);
+  -ms-transform: rotate(45deg) translateY(9px);
+  -o-transform: rotate(45deg) translateY(9px);
+}
+.active-line:nth-child(2){
+  transform: rotate(-45deg) translateY(-8px);
+  -webkit-transform: rotate(-45deg) translateY(-8px);
+  -moz-transform: rotate(-45deg) translateY(-8px);
+  -ms-transform: rotate(-45deg) translateY(-8px);
+  -o-transform: rotate(-45deg) translateY(-8px);
+}
+}
+@media screen and (max-width:700px) {
+  .nav_left{
+    width: 50%;
+  }
+  .navbar ul{
+  width: 70%;
+  }
 }
