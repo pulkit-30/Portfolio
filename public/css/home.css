@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 100vh;
+  height: 93vh;
   width: 100%;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -12,7 +12,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 93vh;
   width: 100%;
   position: absolute;
   top: 0;
