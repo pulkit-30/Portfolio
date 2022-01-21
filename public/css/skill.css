@@ -20,6 +20,8 @@ margin: auto;
 }
 .skill-list li {
   width: 100%;
+  font-family: var(--secondary-font);
+  font-size: 15px;
   list-style: none;
   position: relative;
   padding: 0px 70px;
