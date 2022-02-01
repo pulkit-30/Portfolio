@@ -1,13 +1,13 @@
-const projects = async ()=>{
-    await fetch(
-        "https://secure-cliffs-26248.herokuapp.com/project/"
-      ).then(res=>res.json()).then(projects=>{
-          projects.shift()
-          projects.map(project=>{
-          const newProject = document.createElement('div')
-          newProject.classList.add('project-box')
-          newProject.innerHTML=
-          `<div class="content-inner">
+const projects = async () => {
+  await fetch("https://secure-cliffs-26248.herokuapp.com/project/")
+    .then((res) => res.json())
+    .then((projects) => {
+      document.querySelector(".projectsDisplay").innerHTML = "";
+      projects.shift();
+      projects.map((project) => {
+        const newProject = document.createElement("div");
+        newProject.classList.add("project-box");
+        newProject.innerHTML = `<div class="content-inner">
             <div class="content-front">
               <div class="cf-inner">
                 <img src=${project.Image} alt="projectImage" class="bg" />
@@ -31,9 +31,10 @@ const projects = async ()=>{
                 </div>
               </div>
             </div>
-          </div>`
-        document.querySelector('.projectsDisplay').appendChild(newProject)
+          </div>`;
+        document.querySelector(".projectsDisplay").appendChild(newProject);
+      });
     })
-      }).catch(err=>console.log(err))
-}
-projects()
+    .catch((err) => console.log(err));
+};
+projects();

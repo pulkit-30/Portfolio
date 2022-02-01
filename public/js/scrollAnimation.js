@@ -10,13 +10,12 @@ const changeColor = (i = 0) => {
 };
 changeColor();
 const handelScroll = () => {
-  var i = 0;
   if (window.location.pathname === "/") {
     if (window.pageYOffset >= 0 && window.pageYOffset <= 650) {
       changeColor(0);
-    } else if (window.pageYOffset >= 650 && window.pageYOffset <= 1295) {
+    } else if (window.pageYOffset >= 650 && window.pageYOffset <= 1442) {
       changeColor(1);
-    } else if (window.pageYOffset >= 2204) {
+    } else if (window.pageYOffset >= 1442) {
       changeColor(2);
     }
   } else if (window.location.pathname === "/projects") {

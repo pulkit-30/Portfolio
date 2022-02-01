@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Thasadith&family=Roboto&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Comfortaa", cursive;
-  --heading-font: "Raleway", sans-serif;
-  --primary-color: rgb(12, 12, 12);
+  --heading-font: "Thasadith", sans-serif;
+  --primary-color: rgb(0, 0, 0);
   --secondary-color: #fff;
   --gradient-primary-color: #009fff;
   --gradient-secondary-color: #ec2f4b;
@@ -52,7 +52,7 @@ body {
   );
   border-image-slice: 1;
 }
-.prevent-scroll{
+.prevent-scroll {
   height: 100vh;
   overflow: hidden !important;
 }
@@ -116,7 +116,7 @@ footer {
   font-family: var(--secondary-font);
 }
 
-.backdrop{
+.backdrop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -125,18 +125,29 @@ footer {
   background-color: rgba(0, 0, 0, 0.644);
   z-index: 10;
 }
-.no-display{
+.no-display {
   display: none;
 }
-@media screen  and (max-width:1000px){
-  .heading-text{
+hr {
+  width: 70%;
+  margin: auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-color),
+    var(--gradient-secondary-color)
+  );
+}
+
+@media screen and (max-width: 1000px) {
+  .heading-text {
     width: 300px;
     text-align: center;
   }
-  p{
+  p {
     width: 80%;
     font-size: 18px;
     text-align: center;
-  }  
+  }
 }
-

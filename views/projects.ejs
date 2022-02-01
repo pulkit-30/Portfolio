@@ -1,11 +1,12 @@
 <%- include('./components/header.ejs') %>
-<div class="loader" id="loader"></div>
+<div class="loader flex" id="loader">
+  <div class="loader-circle"></div>
+</div>
 <section class="flex project section column">
-    <h1 class="gradient-text heading-text">
-      Projects
-    </h1>
-    <div class="projectsDisplay flex"></div>
-
+  <h1 class="gradient-text heading-text">Projects</h1>
+  <div class="projectsDisplay flex">
+    <div class="loader-circle"></div>
+  </div>
 </section>
 <script src="/js/data.js"></script>
 <%- include('./components/footer.ejs') %>

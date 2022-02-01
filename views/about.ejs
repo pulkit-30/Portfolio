@@ -2,6 +2,7 @@
   <div class="flex column about-left">
     <h1 class="gradient-text heading-text">About Me</h1>
     <div>Hi! I'm Pulkit</div>
+    <%- include('./components/social.ejs') %>
   </div>
   <div class="about-right">
     <p class="about-para">
@@ -15,6 +16,30 @@
       and self motivated learner. Interested in new programming technologies,
       and continuous self improvement.
     </p>
-    <%- include('./components/social.ejs') %>
+  </div>
+  <div class="github-activity-graph">
+    <!-- Include the library. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+
+    <!-- Prepare a container for your calendar. -->
+    <div class="calendar">
+      <!-- Loading stuff -->
+      <div class="loader flex" id="loader">
+        <div class="loader-circle"></div>
+      </div>
+    </div>
+
+    <script>
+      GitHubCalendar(".calendar", "pulkit-30");
+
+      // or enable responsive functionality:
+      GitHubCalendar(".calendar", "pulkit-30", { responsive: true });
+    </script>
   </div>
 </section>

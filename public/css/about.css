@@ -1,39 +1,54 @@
 .about {
   min-height: 80vh;
   width: 100%;
+  padding: 50px 0px;
 }
-.about-left{
+.about-left {
   width: 30%;
 }
-.about-left div{
+.about-left div {
   width: 200px;
   text-align: center;
 }
-.about-right{
+.about-right {
   width: 50%;
 }
 .about-para {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
-.about .social{
+.about .social {
   position: relative;
-  margin: auto;
+  margin: 20px 0px;
 }
 .about .social a i {
-  color: black !important;
+  font-size: 20px !important;
+  color: rgb(54, 54, 54) !important;
 }
-@media screen  and (max-width:1000px){
-  .about{
+.calendar {
+  border: none !important;
+  letter-spacing: 0px;
+  width: 900px !important;
+  padding: 0px 30px;
+  margin: 100px 0px !important;
+}
+@media screen and (max-width: 1000px) {
+  .about {
     flex-direction: column;
     margin-top: 10vh;
   }
-  .about-right{
+  .about-right {
     width: 80%;
   }
+  .calendar {
+    width: 600px !important;
+  }
 }
-@media screen  and (max-width:500px){
-  .about-right{
+@media screen and (max-width: 500px) {
+  .about-right {
     width: 90%;
+  }
+  .calendar {
+    display: none;
   }
 }
