@@ -9,18 +9,6 @@
   color: var(--secondary-color);
   z-index: 0;
 }
-/* .home::after {
-  content: "";
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 93vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-} */
 
 .home h1 {
   line-height: 2;
@@ -46,6 +34,9 @@
 }
 
 @media screen and (max-width: 526px) {
+  .home {
+    background-image: url("../home-bg-mobile.png");
+  }
   .home h1 {
     font-size: 40px;
   }

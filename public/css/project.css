@@ -6,14 +6,13 @@
 .project h1 {
   margin: 0;
   position: relative;
-  right: 51px;
 }
 .projectsDisplay {
   flex-wrap: wrap;
 }
 .project-box {
   position: relative;
-  width: 450px;
+  width: 25%;
   height: 440px;
   margin: 50px;
 }
@@ -257,12 +256,41 @@
   padding-bottom: 10px;
   font-weight: 400;
 }
+@media screen and (max-width: 1200px) {
+  .project-box {
+    width: 40%;
+  }
+  .content-inner {
+    margin: auto;
+  }
+  .head {
+    font-size: 80px !important;
+  }
+}
 @media screen and (max-width: 800px) {
+  .project-box {
+    width: 80%;
+  }
+  .content-inner {
+    margin: auto;
+  }
   .head {
     font-size: 80px !important;
   }
 }
 @media screen and (max-width: 700px) {
+  .project-box {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .content-inner {
+    margin: auto;
+  }
+  .content-back {
+    position: relative;
+    left: 0 !important;
+    width: 100% !important;
+  }
   .head {
     font-size: 75px !important;
   }

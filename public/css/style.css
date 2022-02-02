@@ -153,6 +153,18 @@ hr {
     text-align: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .heading-text {
+    width: 300px;
+    text-align: center;
+  }
+  p {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+}
 a {
   text-decoration: none;
 }
