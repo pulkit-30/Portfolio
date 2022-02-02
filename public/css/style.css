@@ -95,6 +95,8 @@ footer {
   font-weight: bolder;
 }
 .btn {
+  min-width: 150px;
+  width: fit-content !important;
   cursor: pointer;
   border: 3px solid transparent;
   border-image: linear-gradient(
@@ -150,4 +152,7 @@ hr {
     font-size: 18px;
     text-align: center;
   }
+}
+a {
+  text-decoration: none;
 }

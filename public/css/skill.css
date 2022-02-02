@@ -1,15 +1,19 @@
 .skill {
   /* height: 80vh; */
-margin: 50px auto;
-padding: 50px 0px;
+  margin: 50px auto;
+  padding: 50px 0px;
 }
-.skill_left{
+.skill .btn {
+  font-size: 15px;
+  min-width: 100px;
+}
+.skill_left {
   width: 40%;
 }
-.skill_left h1{
-margin: auto;
+.skill_left h1 {
+  margin: auto;
 }
-.skill_right{
+.skill_right {
   width: 50%;
   flex-wrap: wrap;
 }
@@ -57,25 +61,23 @@ margin: auto;
   font-size: 20px;
   margin: 20px 0px;
 }
-@media screen  and (max-width:1155px){
-  .skill{
+@media screen and (max-width: 1155px) {
+  .skill {
     flex-direction: column !important;
   }
-  .skill_left{
+  .skill_left {
     width: 90%;
     height: fit-content;
   }
-  .skill_right{
+  .skill_right {
     width: 100%;
     height: fit-content;
-
   }
 }
-@media screen and (max-width:616px){
-  .skilldisplay{
+@media screen and (max-width: 616px) {
+  .skilldisplay {
     justify-content: flex-start;
     align-items: flex-start;
-flex-direction: column;
+    flex-direction: column;
   }
-  
 }
