@@ -42,7 +42,7 @@ route.post("/write", (req, res) => {
     };
     req.body.labels = req.body.labels.split(" ");
 
-    if (req.body.password === "Pulkit@30") {
+    if (req.body.password === process.env.USERPASS) {
       const newBlog = new blog(req.body);
       newBlog.save();
       res.redirect("/blog");
