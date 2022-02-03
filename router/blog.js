@@ -22,6 +22,9 @@ route.get("/:id", (req, res) => {
     res.redirect("/failure");
   }
 });
+route.get("/write", (req, res) => {
+    res.render("blog-write", { title: write});
+});
 route.post("/write", (req, res) => {
   try {
     const date = new Date();
