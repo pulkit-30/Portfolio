@@ -9,7 +9,7 @@ route.get("/", (req, res) => {
     res.render("blog", { title: data.title, blogData: data });
   });
 });
-route.get("/:id", (req, res) => {
+route.get("/post/:id", (req, res) => {
   try {
     blog.findById({ _id: req.params.id }, (error, data) => {
       if (error) {
@@ -23,7 +23,7 @@ route.get("/:id", (req, res) => {
   }
 });
 route.get("/write", (req, res) => {
-    res.render("blog-write", { title: write});
+    res.render("blog-write", { title: 'write'});
 });
 route.post("/write", (req, res) => {
   try {
