@@ -10,6 +10,7 @@ const resume = require("./router/resume");
 const project = require("./router/project");
 const success = require("./router/success");
 const failure = require("./router/failure");
+const blog = require("./router/blog");
 
 // ** App utilities
 app.use(express.json());
@@ -34,6 +35,7 @@ app.use("/", home);
 app.use("/contact", contact);
 app.use("/resume", resume);
 app.use("/projects", project);
+app.use("/blog", blog);
 app.use("/success", success);
 app.use("/failure", failure);
 

@@ -22,6 +22,11 @@ const handelScroll = () => {
       document.querySelector(".github-activity-graph").style.opacity = 1;
       document.querySelector(".github-activity-graph").classList.add("move-up");
     }
+  }else if (
+    window.location.pathname === "/blog/" ||
+    window.location.pathname === "/blog"
+  ) {
+    changeColor(6);
   } else if (
     window.location.pathname === "/projects/" ||
     window.location.pathname === "/projects"

@@ -1,0 +1,29 @@
+<%- include('./components/header.ejs') %>
+<section class="flex column blog">
+  <img src="<%= blogData.image %>" class="Cover-Video" />
+  <div class="overlay"></div>
+  <div class="heading-text gradient-text"><%= blogData.title %></div>
+  <div class="flex s-eve">
+    <div class="blog-post-para flex column">
+      <div class="post-info flex s-eve">
+        <span>Read Time: <%= blogData.readTime %> min to read</span>
+        <span>Time: <%= blogData.time %></span>
+        <span>Date: <%= blogData.date %></span>
+      </div>
+      <p><%= blogData.caption %></p>
+      <p><%= blogData.article[0] %></p>
+      <p><%= blogData.article[1] %></p>
+      <p><%= blogData.article[2] %></p>
+
+      <div class="flex s-eve blog-btn">
+        <a class="like"><i class="fas fa-thumbs-up"></i>0</a>
+        <a class="comment"><i class="fas fa-comments"></i>0</a>
+        <a class="share" data-type="/blog/<%= blogData._id %>"
+          ><i class="fas fa-share-alt"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <hr />
+</section>
+<%- include('./components/footer.ejs') %>

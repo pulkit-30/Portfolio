@@ -61,7 +61,7 @@ p {
   font-size: 17px;
   line-height: 1.5;
   color: gray;
-  margin: 50px auto;
+  margin: 30px auto;
   font-weight: bolder;
   line-height: 2;
 }
@@ -162,7 +162,7 @@ hr {
     width: 90%;
     font-size: 15px;
     text-align: center;
-    margin: 0;
+    margin: 10px 0px !important;
   }
 }
 a {
