@@ -10,6 +10,12 @@
         <span>Time: <%= blogData.time %></span>
         <span>Date: <%= blogData.date %></span>
       </div>
+      <br />
+      <div class="labels">
+        Labels: <% blogData.labels.forEach((label)=>{ %>
+        <span><%=label%></span>
+        <% }) %>
+      </div>
       <p><%= blogData.caption %></p>
       <p><%= blogData.article[0] %></p>
       <p><%= blogData.article[1] %></p>
@@ -22,8 +28,10 @@
           ><i class="fas fa-share-alt"></i
         ></a>
       </div>
+      <sub class="ref"><%=blogData.ref%></sub>
     </div>
   </div>
+  <br />
   <hr />
 </section>
 <%- include('./components/footer.ejs') %>

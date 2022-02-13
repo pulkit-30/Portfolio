@@ -1,15 +1,26 @@
 <%- include('./components/header.ejs') %>
 <section class="flex column blog">
-  <img src="https://images.unsplash.com/photo-1510090128235-1aff7947242d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" class="Cover-Video" alt="blog-poster" />
+  <img
+    src="https://images.unsplash.com/photo-1510090128235-1aff7947242d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    class="Cover-Video"
+    alt="blog-poster"
+  />
   <div class="overlay"></div>
   <div class="heading-text gradient-text">Blogs</div>
   <% blogData.forEach(element => { %>
   <div class="flex s-eve blog-post">
-    <div class="blog-post-img">
+    <div class="blog-post-img flex">
       <img src="<%= element.image %>" alt="blog-image" />
+      <div class="credit"><%= element.imageCredit %></div>
     </div>
     <div class="blog-post-para flex column">
       <h1 class="gradient-text"><%= element.title %></h1>
+      <br />
+      <div class="labels">
+        <% element.labels.forEach((label)=>{ %>
+        <span><%=label%></span>
+        <% }) %>
+      </div>
       <div class="post-info flex s-eve">
         <span>Read Time: <%= element.readTime %> min to read</span>
         <span>Time: <%= element.time %></span>
@@ -22,7 +33,7 @@
         <a class="share" data-type="/blog/<%= element._id %>"
           ><i class="fas fa-share-alt"></i
         ></a>
-        <a href="/blog/<%= element._id %>" class="btn gradient-text"
+        <a href="/blog/post/<%= element._id %>" class="btn gradient-text"
           >Read more <i class="fas fa-external-link-square-alt"></i
         ></a>
       </div>

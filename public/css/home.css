@@ -3,7 +3,7 @@
   height: 93vh;
   width: 100%;
   background-color: black;
-  background-image: url("https://user-images.githubusercontent.com/76155456/152491322-0f96fb6d-4f8a-4217-968b-905131dad912.png");
+  background-image: url('https://user-images.githubusercontent.com/76155456/152491322-0f96fb6d-4f8a-4217-968b-905131dad912.png');
   background-size: cover;
   background-position: center;
   color: var(--secondary-color);
@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 526px) {
   .home {
-    background-image: url("https://user-images.githubusercontent.com/76155456/152491309-05ae5208-f486-4168-bc64-20c8c2fecfa6.png");
+    background-image: url('https://user-images.githubusercontent.com/76155456/152491309-05ae5208-f486-4168-bc64-20c8c2fecfa6.png');
   }
   .home h1 {
     font-size: 40px;
@@ -47,6 +47,7 @@
 /* Google Fonts */
 
 .line-1 {
+  caret-color: blue;
   position: relative;
   width: 24em;
   margin: 0 auto;
