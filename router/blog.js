@@ -6,7 +6,7 @@ route.get('/', (req, res) => {
     if (error) {
       res.redirect('/failure');
     }
-    res.render('blog', { title: data.title, blogData: data });
+    res.render('blog', { title: 'Blogs', blogData: data });
   });
 });
 route.get('/post/:id', (req, res) => {
@@ -15,7 +15,7 @@ route.get('/post/:id', (req, res) => {
       if (error) {
         res.redirect('/failure');
       }
-      res.render('blog-post', { title: "Pulkit's Blog", blogData: data });
+      res.render('blog-post', { title: data.title, blogData: data });
     });
   } catch (error) {
     console.log(error);
