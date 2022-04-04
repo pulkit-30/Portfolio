@@ -1,12 +1,12 @@
 <%- include('./components/header.ejs') %>
 <section class="flex column blog">
   <img
-    src="https://images.unsplash.com/photo-1510090128235-1aff7947242d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
     class="Cover-Video"
     alt="blog-poster"
   />
   <div class="overlay"></div>
-  <div class="heading-text gradient-text">Blogs</div>
+  <div class="heading-text gradient-text blog-title">Blogs</div>
   <% blogData.forEach(element => { %>
   <div class="flex s-eve blog-post">
     <div class="blog-post-img flex">
@@ -27,16 +27,16 @@
         <span>Date: <%= element.date %></span>
       </div>
       <p><%= element.caption %></p>
-      <div class="flex s-eve blog-btn">
+      <!-- <div class="flex s-eve blog-btn">
         <a class="like"><i class="fas fa-thumbs-up"></i>0</a>
         <a class="comment"><i class="fas fa-comments"></i>0</a>
         <a class="share" data-type="/blog/<%= element._id %>"
           ><i class="fas fa-share-alt"></i
-        ></a>
+        ></a> -->
         <a href="/blog/post/<%= element._id %>" class="btn gradient-text"
           >Read more <i class="fas fa-external-link-square-alt"></i
         ></a>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
   <hr />
