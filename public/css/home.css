@@ -26,11 +26,43 @@
   letter-spacing: 3px;
   font-size: 18px;
 }
+
 .downArrow {
+
   position: absolute;
   bottom: 30px;
   cursor: pointer;
   padding: 5px;
+  text-align: center;
+  animation: down 1s linear infinite;
+  -webkit-animation: down 1s linear infinite;
+  -webkit-border-radius:50%: ;
+  -moz-border-radius:50%: ;
+  -ms-border-radius:50%: ;
+  -o-border-radius:50%: ;
+}
+
+@keyframes down {
+  0%{
+    opacity: 0;
+    bottom: 35px;
+  }
+  10%{
+    opacity: 0.5;
+  }
+  30%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+    bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 526px) {

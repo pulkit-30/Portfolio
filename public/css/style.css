@@ -76,7 +76,7 @@ section {
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  height: 100px;
+  height: 200px;
 }
 
 .gradient-text {
