@@ -30,7 +30,7 @@ if (window.location.pathname != '/') {
 } else {
   doc.addEventListener('scroll', HandelNavBarDisplay);
   know_more.addEventListener('click', () => {
-    window.scrollTo(0, 1000);
+    window.scrollTo(0, 800);
   });
 }
 window.addEventListener('load', () => {
