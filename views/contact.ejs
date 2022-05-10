@@ -11,14 +11,15 @@
   </div>
   <div>
     <form action="/contact/newContact" class="flex column" method="post">
-      <input type="text" name="Name" placeholder="Name" />
-      <input type="text" name="Email" placeholder="Email" />
+      <input type="text" name="Name" placeholder="Name" required />
+      <input type="text" name="Email" placeholder="Email" required />
       <textarea
         name="Message"
         id=""
         cols="30"
         rows="10"
         placeholder="Message"
+        required
       ></textarea>
       <button class="btn gradient-text" type="submit">Submit</button>
     </form>
