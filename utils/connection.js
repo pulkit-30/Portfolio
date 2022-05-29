@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 async function main() {
-  await mongoose.connect('mongodb://admin:password@localhost:27017');
+  await mongoose.connect(process.env.DBURL);
 }
 module.exports = main;
