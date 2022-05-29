@@ -6,8 +6,13 @@ const exp_array = [
   //   title:
   //     '<a href="https://summerofcode.withgoogle.com/programs/2022/organizations/circuitverseorg" target="_blank">Google Summer of Code</a>',
   //   position: '<a href="https://github.com/CircuitVerse">Circuitverse</a>',
-  //   time: '2022',
+  //   time: 'present',
   // },
+  {
+    title: '<a href="#" target="_blank">Microsoft Engage Internship 2022</a>',
+    position: '',
+    time: '2022',
+  },
   {
     title: 'Open Source Coordinator',
     position:
@@ -27,7 +32,7 @@ exp_array.forEach((exp) => {
     <div class="line"></div>
     <div class="exp-para flex column">
     <h1 class="gradient-text">${exp.title}</h1>
-    <div>▸ ${exp.position}</div>
+    <div>at: ${exp.position}</div>
     <strong style="font-size:15px">${exp.time}</strong>
     </div>
     </div>`;

@@ -6,6 +6,8 @@
   background-image: url('https://user-images.githubusercontent.com/76155456/152491322-0f96fb6d-4f8a-4217-968b-905131dad912.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--secondary-color);
   z-index: 0;
 }

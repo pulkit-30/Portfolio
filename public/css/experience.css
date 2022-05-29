@@ -2,7 +2,7 @@
   min-height: 30vh;
   overflow: hidden;
   width: 100vw;
-  padding: 50px 0px 100px 0px;
+  padding: 20px 0px;
 }
 .exp-main {
   width: 50vw;
@@ -11,10 +11,16 @@
   width: 90%;
 }
 .exp-points {
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 60vh;
+  /* background-color: aqua; */
   font-family: var(--secondary-font);
   letter-spacing: normal;
   line-height: 2;
   width: 50vw;
+  overflow: auto;
+  overflow-x: hidden;
 }
 .object {
   width: 10%;

@@ -2,34 +2,24 @@
 <br />
 
 <section class="blog-image">
-  <h1 class="gradient-text heading-text">Blogs</h1>
-  <img
-    src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-  />
-  <span
-    >Image credit:
-    <a href="https://unsplash.com/@blakeconnally">@blakeconnally</a></span
-  >
+  <span>Image credit: <a href="https://unsplash.com/@fossy">@fossy</a></span>
   <div class="shadow"></div>
 </section>
 
 <section class="flex column blog">
-<div class="blog-box">
-<a href="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8">
-  <img
-  src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8"
-  />
-</a>
-<div class="details">
-    <h1 class="gradient-text heading-text">Web development</h1>
-    Web development refers to the building, creating, and maintaining of
-    websites. It includes aspects such as web design, web publishing, web
-    programming, and database management. It is the creation of an application
-    that works over the internet i.e. websites.
-  <a href="/blog/post/webDev.md" class="btn gradient-text">Read More</a>
-</div>
-</div>
-<hr>
-<br>
+  <% blogs.forEach(blogpost=>{ %>
+  <div class="blog-box">
+    <img src="<%= blogpost.image %>" />
+    <div class="details">
+      <h1 class="gradient-text heading-text"><%= blogpost.title%></h1>
+      <%= blogpost.caption %>
+      <a href="/blog/post/<%= blogpost._id %>" class="btn gradient-text"
+        >Read More</a
+      >
+    </div>
+  </div>
+  <hr />
+  <br />
+  <% })%>
 </section>
 <%- include('./components/footer.ejs') %>

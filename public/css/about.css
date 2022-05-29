@@ -21,7 +21,7 @@
   position: relative;
   margin: 20px 0px;
 }
-.about .social a{
+.about .social a {
   margin: 0px 10px;
 }
 .about .social a i {
@@ -29,10 +29,10 @@
   color: rgb(0, 0, 0) !important;
 }
 .calendar {
-  border: none !important;
+  /* border: none !important; */
   letter-spacing: 0px;
   width: 900px !important;
-  padding: 0px 30px;
+  padding: 10px 30px;
   margin: 100px 0px !important;
 }
 @media screen and (max-width: 1000px) {
