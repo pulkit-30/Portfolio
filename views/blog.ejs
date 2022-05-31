@@ -13,13 +13,45 @@
     <div class="details">
       <h1 class="gradient-text heading-text"><%= blogpost.title%></h1>
       <%= blogpost.caption %>
-      <a href="/blog/post/<%= blogpost._id %>" class="btn gradient-text"
-        >Read More</a
-      >
+      <div class="flex s-btw">
+        <a href="/blog/post/<%= blogpost._id %>" class="btn gradient-text"
+          >Read More 👓</a
+        >
+        &nbsp; &nbsp;
+        <div
+          href="/blog/post/<%= blogpost._id %>"
+          class="btn gradient-text"
+          id="share-blog-btn"
+        >
+          Share 🔗
+        </div>
+      </div>
     </div>
   </div>
   <hr />
   <br />
   <% })%>
 </section>
+<script>
+  function CopyLink(event) {
+    event.target.classList.remove('gradient-text');
+    event.target.classList.remove('btn');
+    event.target.style.border = '3px solid green';
+    event.target.style.padding = '4px 10px';
+    event.target.style.color = 'green';
+    event.target.textContent = 'Link Copied';
+    navigator.clipboard.writeText(
+      'https://pure-taiga-42354.herokuapp.com' +
+        event.target.getAttribute('href')
+    );
+    setTimeout(() => {
+      event.target.classList.add('gradient-text');
+      event.target.classList.add('btn');
+      event.target.border = '3px solid transparent';
+      event.target.textContent = 'Share 🔗';
+    }, 2000);
+  }
+  const ShareButton = document.getElementById('share-blog-btn');
+  ShareButton.addEventListener('click', CopyLink);
+</script>
 <%- include('./components/footer.ejs') %>

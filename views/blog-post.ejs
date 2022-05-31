@@ -8,17 +8,43 @@
     <h1 class="gradient-text heading-text"><%= blog.title %></h1>
   </div>
 </section>
-<section class="flex column blog-box blog-post">
-  <p><%=blog.caption %></p>
-  <hr />
-  <% blog.Article.forEach(para => { %>
-  <p><%= para %></p>
-  <% }) %>
-  <br />
-  <hr />
-  <br />
-  <h3 class="heading-text gradient-text">Thank You</h3>
-  <h4>By: Pulkit Gupta</h4>
-  <h6><%= blog.createdAt %></h6>
-</section>
+<main class="flex blog-main-box" style="align-items: flex-start">
+  <section class="flex sidebar column s-eve" style="align-items: flex-start">
+    <div>Written By: <span class="gradient-text">Pulkit Gupta</span></div>
+    <div>Location: India</div>
+    <div>Date: <%=blog.date %></div>
+    <div>Time: <%=blog.time %></div>
+    <div class="">
+      <h4 class="gradient-text">Send Feedback</h4>
+      <form action="/blog/feedback" class="flex" method="post">
+        <input
+          type="text"
+          value="<%= JSON.stringify(blog)%>"
+          name="blog"
+          style="display: none"
+        />
+        <br />
+        <input
+          name="message"
+          type="text"
+          placeholder="write your words..."
+          required
+        />
+        &nbsp;
+        <button class="btn gradient-text">Send</button>
+      </form>
+    </div>
+  </section>
+  <section class="flex column blog-box blog-post">
+    <p><%=blog.caption %></p>
+    <hr />
+    <% blog.Article.forEach(para => { %>
+    <p><%= para %></p>
+    <% }) %>
+    <br />
+    <hr />
+    <br />
+    <h3 class="heading-text gradient-text">Thank You</h3>
+  </section>
+</main>
 <%- include('./components/footer.ejs') %>
