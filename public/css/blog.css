@@ -30,13 +30,6 @@
   top: 0;
   height: 100%;
   z-index: 1;
-  animation: animate-shadow 2s ease-in-out infinite;
-  -webkit-animation: animate-shadow 2s ease-in-out infinite;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
 }
 .blog-image h1 {
   font-size: 100px;
@@ -102,10 +95,10 @@
 .post-image {
   background-color: white !important;
   background-size: cover;
-  height: 700px;
+  height: 60vh;
 }
 .blog-post p {
-  font-size: 20px;
+  font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: normal;
   line-height: 2.5;
@@ -129,7 +122,7 @@
   position: sticky;
   top: 80px;
   left: 20px;
-  background-color: rgba(221, 221, 221, 0.449);
+  background-color: rgba(0, 0, 0, 0.027);
   border-radius: 5px;
   min-width: 300px;
   min-height: 500px;
@@ -138,6 +131,10 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   padding: 20px;
+}
+.sidebar h1{
+  font-size: 30px;
+  text-align: center;
 }
 .sidebar form {
   border-top: 1px solid black;
@@ -208,22 +205,5 @@
   }
   .blog-post p {
     width: 80%;
-  }
-}
-@keyframes animate-shadow {
-  0% {
-    background-color: rgba(0, 0, 0, 0.659);
-  }
-  10% {
-    background-color: rgba(0, 0, 0, 0.512);
-  }
-  20% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.659);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.659);
   }
 }

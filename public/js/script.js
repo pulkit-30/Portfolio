@@ -47,3 +47,4 @@ skill_list.forEach((e) => {
     e.children[i].children[0].textContent = e.children[i].textContent.trim()[0];
   }
 });
+

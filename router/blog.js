@@ -8,6 +8,7 @@ route.get('/', (req, res) => {
   try {
     blogModel.find({}, (error, blogs) => {
       if (error) throw new Error('Something went wrong!!!');
+      blogs = blogs.reverse();
       res.render('blog', { title: 'Blogs', blogs: blogs });
     });
   } catch (error) {
@@ -19,11 +20,11 @@ route.get('/post/:id', (req, res) => {
   try {
     blogModel.findOne({ _id: req.params.id }, (error, blog) => {
       if (error) throw new Error('Something went wrong!!!');
-      blog.time = blog.createdAt.toLocaleTimeString();
+      blog.time = blog.createdAt?.toLocaleTimeString();
       blog.date =
-        blog.createdAt.getDate() +
+        blog.createdAt?.getDate() +
         '/' +
-        blog.createdAt.getDate() +
+        blog.createdAt?.getMonth() +
         '/' +
         blog.createdAt.getFullYear();
       res.render('blog-post', {

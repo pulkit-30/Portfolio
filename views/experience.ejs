@@ -4,17 +4,21 @@
     <p class="exp-main-para"></p>
   </div>
   <div class="flex column exp-points" id="Exp-Main-Box">
-    <!-- <div class="flex exp-box">
+    <% exp.forEach(exp =>{ %>
+    <div class="flex exp-box">
       <object data="bullet.svg" width="50" height="50" class="object"></object>
       <div class="line"></div>
       <div class="exp-para flex column">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          asperiores?
-        </div>
-        <div>Lorem ipsum dolor sit amet.</div>
+        <h1 class="gradient-text"><%= exp.title %></h1>
+        <% if(exp.position){ %>
+        <div><%= exp.position %></div>
+        <% } %>
+        <strong style="font-size: 15px"
+          ><%=exp.time.start%> <%if(exp.time.end){%> - <%=exp.time.end%> <%}%>
+        </strong>
       </div>
-    </div> -->
-  </div>
+    </div>
+    <% }) %>
+</div>
+
 </section>
-<script src="js/experience.js"></script>

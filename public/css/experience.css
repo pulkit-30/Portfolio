@@ -10,11 +10,11 @@
 .exp-main-para {
   width: 90%;
 }
-.exp-points {
+.exp-points { 
+  position: relative;
   justify-content: flex-start;
   align-items: flex-start;
   height: 60vh;
-  /* background-color: aqua; */
   font-family: var(--secondary-font);
   letter-spacing: normal;
   line-height: 2;

@@ -10,12 +10,13 @@
 </section>
 <main class="flex blog-main-box" style="align-items: flex-start">
   <section class="flex sidebar column s-eve" style="align-items: flex-start">
+    <h1 class="gradient-text heading-text"><%= blog.title %></h1>
     <div>Written By: <span class="gradient-text">Pulkit Gupta</span></div>
     <div>Location: India</div>
     <div>Date: <%=blog.date %></div>
     <div>Time: <%=blog.time %></div>
     <div class="">
-      <h4 class="gradient-text">Send Feedback</h4>
+      <h4 class="gradient-text">Share Feedback</h4>
       <form action="/blog/feedback" class="flex" method="post">
         <input
           type="text"
@@ -39,7 +40,11 @@
     <p><%=blog.caption %></p>
     <hr />
     <% blog.Article.forEach(para => { %>
+    <% if(para.split(':')[0] == "https"){ %> 
+      <img src='<%= para %>' alt="article-image" />
+    <% } else { %>
     <p><%= para %></p>
+    <% } %> 
     <% }) %>
     <br />
     <hr />
