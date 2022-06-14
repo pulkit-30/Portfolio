@@ -11,7 +11,7 @@
   <div class="blog-box">
     <img src="<%= blogpost.image %>" />
     <div class="details">
-      <h1 class="gradient-text heading-text"><%= blogpost.title%></h1>
+      <h3 class="gradient-text heading-text"><%= blogpost.title%></h3>
       <%= blogpost.caption %>
       <div class="flex s-btw">
         <a href="/blog/post/<%= blogpost._id %>" class="btn gradient-text"
@@ -41,7 +41,7 @@
     event.target.style.color = 'green';
     event.target.textContent = 'Link Copied';
     navigator.clipboard.writeText(
-      'https://pure-taiga-42354.herokuapp.com' +
+      'https://pulkitgupta.me' +
         event.target.getAttribute('href')
     );
     setTimeout(() => {

@@ -36,11 +36,15 @@
       </form>
     </div>
   </section>
-  <section class="flex column blog-box blog-post">
+  <section class="blog-post">
     <p><%=blog.caption %></p>
     <hr />
     <% blog.Article.forEach(para => { %>
-    <% if(para.split(':')[0] == "https"){ %> 
+      <% if(para.split(':')[0] == "link"){ %> 
+        <a href="<%=para.split(':')[1]%>"><%= para.split(':')[1] %></a>
+      <% } else if(para.split(':')[0] == "h1"){ %>
+      <h3 class="gradient-text"><%= para.split(':')[1] %></h3>
+      <% }else if(para.split(':')[0] == "https"){ %> 
       <img src='<%= para %>' alt="article-image" />
     <% } else { %>
     <p><%= para %></p>
@@ -49,7 +53,6 @@
     <br />
     <hr />
     <br />
-    <h3 class="heading-text gradient-text">Thank You</h3>
   </section>
 </main>
 <%- include('./components/footer.ejs') %>
