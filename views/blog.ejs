@@ -9,7 +9,7 @@
 <section class="flex column blog">
   <% blogs.forEach(blogpost=>{ %>
   <div class="blog-box">
-    <img src="<%= blogpost.image %>" />
+    <img loading="lazy" src="<%= blogpost.image %>" alt="blog-image" />
     <div class="details">
       <h3 class="gradient-text heading-text"><%= blogpost.title%></h3>
       <%= blogpost.caption %>
@@ -41,8 +41,7 @@
     event.target.style.color = 'green';
     event.target.textContent = 'Link Copied';
     navigator.clipboard.writeText(
-      'https://pulkitgupta.me' +
-        event.target.getAttribute('href')
+      'https://pulkitgupta.me' + event.target.getAttribute('href')
     );
     setTimeout(() => {
       event.target.classList.add('gradient-text');
