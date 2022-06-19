@@ -9,6 +9,8 @@ route.get('/', (req, res) => {
 
 route.post('/newContact', async (req, res) => {
   try {
+    const newContactData = await new contact(req.body);
+    await newContactData.save();
     await main({
       to: process.env.USER_EMAIL,
       subject: 'New Contact ✉️!',
@@ -21,8 +23,6 @@ route.post('/newContact', async (req, res) => {
       text: `Hey ${req.body.Name}!, Hope you are doing great! I have received your message and I will surely contact you back`,
       mail: req.body,
     });
-    const newContactData = await new contact(data);
-    await newContactData.save();
     res.status(200).redirect('/success');
   } catch (error) {
     res.status(500).redirect('/failure');

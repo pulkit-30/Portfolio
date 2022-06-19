@@ -1,6 +1,6 @@
 const Nav = document.querySelector('#nav');
 const changeColor = (i = 0) => {
-  for (let x = 0; x < 6; x++) {
+  for (let x = 0; x <= 6; x++) {
     if (x == i) {
       Nav.children[1].children[i].classList.add('gradient-text');
     } else {
@@ -22,25 +22,13 @@ const handelScroll = () => {
       document.querySelector('.github-activity-graph').style.opacity = 1;
       document.querySelector('.github-activity-graph').classList.add('move-up');
     }
-  } else if (
-    window.location.pathname === '/blog/' ||
-    window.location.pathname === '/blog'
-  ) {
+  } else if (window.location.pathname.includes('blog')) {
     changeColor(6);
-  } else if (
-    window.location.pathname === '/projects/' ||
-    window.location.pathname === '/projects'
-  ) {
+  } else if (window.location.pathname.includes('projects')) {
     changeColor(3);
-  } else if (
-    window.location.pathname === '/resume' ||
-    window.location.pathname === '/resume/'
-  ) {
+  } else if (window.location.pathname.includes('resume')) {
     changeColor(4);
-  } else if (
-    window.location.pathname === '/contact/' ||
-    window.location.pathname === '/contact'
-  ) {
+  } else if (window.location.pathname.includes('contact')) {
     changeColor(5);
   }
 };

@@ -50,7 +50,9 @@
       event.target.textContent = 'Share 🔗';
     }, 2000);
   }
-  const ShareButton = document.getElementById('share-blog-btn');
-  ShareButton.addEventListener('click', CopyLink);
+  const ShareButton = document.querySelectorAll('#share-blog-btn');
+  ShareButton.forEach((button) => {
+    button.addEventListener('click', CopyLink);
+  });
 </script>
 <%- include('./components/footer.ejs') %>
