@@ -130,7 +130,7 @@
   background-color: rgba(0, 0, 0, 0.027);
   border-radius: 5px;
   min-width: 300px;
-  min-height: 500px;
+  min-height: 70vh;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -170,7 +170,7 @@
   font-size: 30px;
 }
 .blog-post img {
-  width: 70%;
+  height: 400px;
 }
 .sidebar .post-image {
   margin: 0;

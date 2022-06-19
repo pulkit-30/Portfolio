@@ -16,6 +16,14 @@
       style="background-image: url(<%= blog.image %>)"
     ></div>
     <div>Written By: <span class="gradient-text">Pulkit Gupta</span></div>
+
+    <% blog.Article.forEach(para => { %> 
+      <% if(para.split(':')[0] =="h1"){ %>
+    <a href="#<%=para.split(':')[1]%>" class="gradient-text">
+        <h6><%=para.split(':')[1]%></h6>
+    </a>
+    <% } %>
+    <% }) %>
     <div class="">
       <h4 class="gradient-text">Share Feedback</h4>
       <form action="/blog/feedback" class="flex" method="post">
@@ -38,21 +46,25 @@
     </div>
   </section>
   <section class="blog-post">
-    <p><%=blog.caption %></p>
+    <p><%= blog.caption %></p>
     <hr />
-    <% blog.Article.forEach(para => { %> <% if(para.split(':')[0] == "link"){ %>
+    <% blog.Article.forEach(para => { %> 
+      <% if(para.split(':')[0] == "link"){ %>
     <p>
       <a href="<%=para.split('|')[1]%>"><%= para.split('|')[2] %></a>
     </p>
     <% } else if(para.split(':')[0] == "h1"){ %>
-    <h3 class="gradient-text"><%= para.split(':')[1] %></h3>
+    <h3 id="<%=para.split(':')[1]%>" class="gradient-text">
+      <%= para.split(':')[1] %>
+    </h3>
     <% }else if(para.split(':')[0] == "https"){ %>
     <p class="flex">
       <img src="<%= para %>" loading="lazy" alt="article-image" />
     </p>
     <% } else { %>
     <p><%= para %></p>
-    <% } %> <% }) %>
+    <% } %> 
+    <% }) %>
     <br />
     <hr />
     <br />
