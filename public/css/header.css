@@ -4,7 +4,7 @@
   font-size: 15px;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 80px;
   width: 100%;
   z-index: 10;
 }
@@ -55,6 +55,11 @@
   padding: inherit 2px !important;
   font-size: 15px;
 }
+.menu-box{
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1344px) {
   .nav_left {
     width: 30%;
@@ -67,15 +72,12 @@
     right: 0;
     top: 0;
     height: 100vh;
-    width: 50vw;
+    width: 500px;
     background-color: var(--primary-color);
     flex-direction: column;
     font-size: 20px;
-    transform: translateX(100vh);
-    -webkit-transform: translateX(100vh);
-    -moz-transform: translateX(100vh);
-    -ms-transform: translateX(100vh);
-    -o-transform: translateX(100vh);
+    transform: translateX(20vh);
+    opacity: 0;
   }
   .menu-slide {
     transform: translateX(0) !important;
@@ -83,12 +85,13 @@
     -moz-transform: translateX(0) !important;
     -ms-transform: translateX(0) !important;
     -o-transform: translateX(0) !important;
+    opacity: 1 !important;
   }
   .hamburger {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    z-index: 1000;
+    z-index: 10;
   }
   .line {
     width: 30px;

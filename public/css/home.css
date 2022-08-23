@@ -1,113 +1,143 @@
 .home {
   position: relative;
-  height: 93vh;
+  height: 100vh;
   width: 100%;
-  background-color: black;
-  background-image: url('https://user-images.githubusercontent.com/76155456/152491322-0f96fb6d-4f8a-4217-968b-905131dad912.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  z-index: 2;
   color: var(--secondary-color);
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.653));
   z-index: 0;
 }
-
 .home h1 {
-  line-height: 2;
-  text-align: center;
-  font-family: var(--secondary-font);
-  font-size: 3.3rem;
-  margin-bottom: 10px;
+  position: relative;
+  right: 20%;
+  z-index: 5;
 }
 .home p {
+  position: relative;
+  right: 30%;
   padding: 0;
   margin: 20px auto;
   font-size: 15px;
   color: var(--secondary-color);
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   letter-spacing: 3px;
   font-size: 18px;
+  z-index: 5;
 }
 
 .downArrow {
-
   position: absolute;
-  bottom: 30px;
+  bottom: 5rem;
+  right: 4rem;
   cursor: pointer;
-  padding: 5px;
-  text-align: center;
-  animation: down 1s linear infinite;
-  -webkit-animation: down 1s linear infinite;
-  -webkit-border-radius:50%: ;
-  -moz-border-radius:50%: ;
-  -ms-border-radius:50%: ;
-  -o-border-radius:50%: ;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+.downArrow::before {
+  content: 'SCROLL DOWN';
+  position: absolute;
+  right: 50px;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  /* background-color: #fff; */
+}
+.navigate-down {
+  text-decoration: none;
+  color: white;
+  position: absolute !important;
+  right: 0;
+  background-color: rgba(21, 21, 21, 0.336);
+  padding: 30px 25px;
+  width: 200px;
+  margin: 1px 0px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 10;
 }
 
-@keyframes down {
-  0%{
-    opacity: 0;
-    bottom: 35px;
-  }
-  10%{
-    opacity: 0.5;
-  }
-  30%{
-    opacity: 1;
-  }
-  70%{
-    opacity: 1;
-  }
-  90%{
-    opacity: 0.5;
-  }
-  100%{
-    opacity: 0;
-    bottom: 5px;
-  }
+.navigate-down:hover {
+  background-color: rgba(0, 0, 0, 0.585);
+}
+.navigate-down::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--gradient-secondary-color);
+}
+.home-social-icons {
+  z-index: 10;
+  position: absolute;
+  bottom: 5rem;
+  left: 10rem;
+  width: 300px;
+  font-size: 15px !important;
+}
+.home-social-icons .social {
+  width: 100%;
 }
 
-@media screen and (max-width: 526px) {
+@media screen and (max-width: 1264px) {
   .home h1 {
-    font-size: 40px;
+    font-size: 3rem;
   }
 }
 
-/* 
- */
-/* Google Fonts */
+@media screen and (max-width: 787px) {
+  .navigation-menu,
+  .navigate-down {
+    display: none;
+  }
+  .home h1 {
+    right: unset;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .home p {
+    right: unset;
+    text-align: center;
+    /* font-size: 40px; */
+  }
+  .home-social-icons {
+    display: none;
+  }
+  .downArrow {
+    right: 47%;
+  }
+  .downArrow::before {
+    display: none;
+  }
+}
 
-.line-1 {
-  caret-color: blue;
-  position: relative;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
+@media screen and (max-width: 500px) {
+  .home {
+    background-position: center;
   }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
+  .home h1 {
+    right: unset;
+    text-align: center;
+    font-size: 2rem;
   }
 }

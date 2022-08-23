@@ -1,7 +1,11 @@
 .skill {
-  /* height: 80vh; */
-  margin: 50px auto;
-  padding: 50px 0px;
+  padding-top: 5rem;
+  margin: 7rem 0px;
+  position: relative;
+}
+.skill .outline-text {
+  left: 13rem;
+  top: -2rem;
 }
 .skill .btn {
   font-size: 15px;
@@ -79,5 +83,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+  }
+  .skill {
+    margin: 0;
+  }
+  .skill .outline-text {
+    left: 35%;
+    top: 3rem;
   }
 }

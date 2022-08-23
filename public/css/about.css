@@ -1,10 +1,11 @@
 .about {
-  min-height: 80vh;
+  position: relative;
+  min-height: 50vh;
   width: 100%;
   padding: 50px 0px;
 }
 .about-left {
-  width: 30%;
+  width: 40%;
 }
 .about-left div {
   width: 200px;
@@ -38,7 +39,6 @@
 @media screen and (max-width: 1000px) {
   .about {
     flex-direction: column;
-    margin-top: 10vh;
   }
   .about-right {
     width: 80%;

@@ -2,7 +2,12 @@
   min-height: 30vh;
   overflow: hidden;
   width: 100vw;
+  position: relative;
   padding: 20px 0px;
+}
+.experience .outline-text {
+  left: 2rem;
+  top: 7rem;
 }
 .exp-main {
   width: 50vw;
@@ -10,7 +15,7 @@
 .exp-main-para {
   width: 90%;
 }
-.exp-points { 
+.exp-points {
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
@@ -67,10 +72,17 @@
 }
 
 @media screen and (max-width: 560px) {
+  .experience {
+    padding-top: 2rem;
+  }
   .exp-points h1 {
     font-size: 20px;
   }
   .exp-para > div {
     font-size: 15px;
+  }
+  .experience .outline-text {
+    left: 3rem;
+    top: 0rem;
   }
 }

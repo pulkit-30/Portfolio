@@ -30,7 +30,7 @@ if (window.location.pathname != '/') {
 } else {
   doc.addEventListener('scroll', HandelNavBarDisplay);
   know_more.addEventListener('click', () => {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 1000);
   });
 }
 window.addEventListener('load', () => {
@@ -47,4 +47,3 @@ skill_list.forEach((e) => {
     e.children[i].children[0].textContent = e.children[i].textContent.trim()[0];
   }
 });
-
