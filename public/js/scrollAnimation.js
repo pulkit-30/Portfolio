@@ -10,14 +10,12 @@ const changeColor = (i = 0) => {
 };
 changeColor();
 const handelScroll = () => {
-  if (window.location.pathname === '/') {
-    if (window.pageYOffset >= 0 && window.pageYOffset <= 650) {
-      changeColor(0);
-    } else if (window.pageYOffset >= 650 && window.pageYOffset <= 1442) {
-      changeColor(1);
-    } else if (window.pageYOffset >= 1892) {
-      changeColor(2);
-    }
+  if (window.pageYOffset >= 0 && window.pageYOffset <= 650) {
+    changeColor(0);
+  } else if (window.pageYOffset >= 650 && window.pageYOffset <= 1442) {
+    changeColor(1);
+  } else if (window.pageYOffset >= 1892) {
+    changeColor(2);
   }
 };
 handelScroll();
