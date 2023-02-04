@@ -323,7 +323,6 @@ a {
 /* public/css/about.css */
 .about {
   position: relative;
-  min-height: 50vh;
   width: 100%;
   padding: 50px 0px;
 }
