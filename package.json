@@ -6,22 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "build": "esbuild ./public/css/main.css  --bundle --outfile=public/build/build_out.css"
+    "build": "esbuild ./public/css/main.css  --bundle --outfile=public/build/build_out.css --loader:.webp=file && esbuild ./public/js/main.js  --bundle --outfile=public/build/build_out.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.1",
     "dotenv": "^14.2.0",
     "ejs": "^3.1.6",
     "esbuild": "^0.14.48",
     "express": "^4.17.2",
-    "mongoose": "^6.1.7",
-    "nodemailer": "^6.7.5",
     "nodemon": "^2.0.15",
     "path": "^0.12.7"
   },
   "engines": {
-    "node": "14.18.0"
+    "node": "16.14.2"
   }
 }

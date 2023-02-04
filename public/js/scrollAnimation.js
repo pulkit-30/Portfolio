@@ -1,6 +1,6 @@
 const Nav = document.querySelector('#nav');
 const changeColor = (i = 0) => {
-  for (let x = 0; x <= 6; x++) {
+  for (let x = 0; x <= 4; x++) {
     if (x == i) {
       Nav.children[1].children[i].classList.add('gradient-text');
     } else {
@@ -18,14 +18,6 @@ const handelScroll = () => {
     } else if (window.pageYOffset >= 1892) {
       changeColor(2);
     }
-  } else if (window.location.pathname.includes('blog')) {
-    changeColor(6);
-  } else if (window.location.pathname.includes('projects')) {
-    changeColor(3);
-  } else if (window.location.pathname.includes('resume')) {
-    changeColor(4);
-  } else if (window.location.pathname.includes('contact')) {
-    changeColor(5);
   }
 };
 handelScroll();

@@ -3,11 +3,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const body_parser = require('body-parser');
-const DB_Connection = require('./utils/connection');
 const home = require('./router/home');
-const contact = require('./router/contact');
 const resume = require('./router/resume');
-const project = require('./router/project');
 const success = require('./router/success');
 const failure = require('./router/failure');
 const blog = require('./router/blog');
@@ -21,21 +18,10 @@ app.use(body_parser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
-//** connection Database
-DB_Connection()
-  .then(() => {
-    console.log('Database connected Successfully!');
-  })
-  .catch((err) =>
-    console.log('Cannot Connect your Database !! Error -->  ', err)
-  );
-
 //**  App Routes
 app.use('/', home);
-app.use('/contact', contact);
+app.use('/blog', blog)
 app.use('/resume', resume);
-app.use('/projects', project);
-app.use('/blog', blog);
 app.use('/success', success);
 app.use('/failure', failure);
 
