@@ -8,6 +8,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.17.5"
+    "esbuild": "^0.17.6"
   }
 }
