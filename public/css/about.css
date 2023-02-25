@@ -1,54 +1,54 @@
 .about {
-  position: relative;
-  /* min-height: 70vh; */
-  width: 100%;
-  padding: 50px 0px;
+    position: relative;
+    /* min-height: 70vh; */
+    width: 100%;
+    padding: 50px 0px;
 }
 .about-left {
-  width: 40%;
+    width: 40%;
 }
 .about-left div {
-  width: 200px;
-  text-align: center;
+    width: 200px;
+    text-align: center;
 }
 .about-right {
-  width: 50%;
+    width: 50%;
 }
 .about-para {
-  width: 100%;
-  padding: 5px;
+    width: 100%;
+    padding: 5px;
 }
 .about .social {
-  position: relative;
-  margin: 20px 0px;
+    position: relative;
+    margin: 20px 0px;
 }
 .about .social a {
-  margin: 0px 10px;
+    margin: 0px 10px;
 }
 .about .social a i {
-  font-size: 25px !important;
-  color: rgb(0, 0, 0) !important;
+    font-size: 25px !important;
+    color: rgb(0, 0, 0) !important;
 }
 .calendar {
-  border: none !important;
-  letter-spacing: 0px;
-  width: 900px !important;
-  padding: 10px 30px;
-  margin: 100px 0px !important;
+    border: none !important;
+    letter-spacing: 0px;
+    width: 900px !important;
+    padding: 10px 30px;
+    margin: 100px 0px !important;
 }
 @media screen and (max-width: 1000px) {
-  .about {
-    flex-direction: column;
-  }
-  .about-right {
-    width: 80%;
-  }
-  .calendar {
-    display: none;
-  }
+    .about {
+        flex-direction: column;
+    }
+    .about-right {
+        width: 80%;
+    }
+    .calendar {
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
-  .about-right {
-    width: 90%;
-  }
+    .about-right {
+        width: 90%;
+    }
 }

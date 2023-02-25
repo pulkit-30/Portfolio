@@ -1,31 +1,31 @@
 .social {
-  width: 40%;
+    width: 40%;
 }
 .social a {
-  font-size: 30px;
-  color: var(--secondary-color);
+    font-size: 30px;
+    color: var(--secondary-color);
 }
 .social a:hover {
-  transition: 0.2s;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
+    transition: 0.2s;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 .cpy {
-  opacity: 0.5;
-  font-size: 15px;
-  position: relative;
-  top: 40px;
+    opacity: 0.5;
+    font-size: 15px;
+    position: relative;
+    top: 40px;
 }
 @media screen and (max-width: 700px) {
-  .social {
-    width: 80%;
-    padding: 10px;
-  }
+    .social {
+        width: 80%;
+        padding: 10px;
+    }
 }

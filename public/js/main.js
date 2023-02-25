@@ -1,2 +1,2 @@
-require('./script.js')
-require('./scrollAnimation.js')
+require("./script.js");
+require("./scrollAnimation.js");
