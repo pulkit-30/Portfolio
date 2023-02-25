@@ -172,14 +172,6 @@ hr {
 a {
   text-decoration: none;
 }
-.particles-js-canvas-el {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: -1;
-}
 
 /* public/css/home.css */
 .home {
@@ -188,8 +180,9 @@ a {
   width: 100%;
   z-index: 2;
   color: var(--secondary-color);
-  background-image: url(./background-WHKJ6ADA.webp);
+  background-image: url(./background-HNOXSKLZ.jpeg);
   background-color: black;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -200,17 +193,19 @@ a {
   right: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.653));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.923));
   z-index: 0;
 }
 .home h1 {
+  font-size: 4rem;
   position: relative;
-  right: 20%;
+  left: 20%;
+  text-align: center;
   z-index: 5;
 }
 .home p {
   position: relative;
-  right: 25%;
+  left: 20%;
   padding: 0;
   margin: 20px auto;
   font-size: 15px;
@@ -223,7 +218,7 @@ a {
 .downArrow {
   position: absolute;
   bottom: 5rem;
-  right: 4rem;
+  right: 22%;
   cursor: pointer;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -242,38 +237,11 @@ a {
   font-weight: bold;
   font-family: var(--primary-font);
 }
-.navigate-down {
-  text-decoration: none;
-  color: white;
-  position: absolute !important;
-  right: 0;
-  background-color: rgba(21, 21, 21, 0.336);
-  padding: 30px 25px;
-  width: 200px;
-  margin: 1px 0px;
-  cursor: pointer;
-  transition: 1s;
-  z-index: 10;
-}
-.navigate-down:hover {
-  background-color: rgba(0, 0, 0, 0.585);
-}
-.navigate-down::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  z-index: 10;
-  top: 50%;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--gradient-secondary-color);
-}
 .home-social-icons {
   z-index: 10;
   position: absolute;
-  bottom: 5rem;
-  left: 10rem;
+  bottom: 15rem;
+  right: 20%;
   width: 300px;
   font-size: 15px !important;
 }
@@ -284,23 +252,23 @@ a {
   .home h1 {
     font-size: 3rem;
   }
-}
-@media screen and (max-width: 787px) {
-  .navigation-menu,
-  .navigate-down {
-    display: none;
-  }
-  .home h1 {
-    right: unset;
-    text-align: center;
-    font-size: 3rem;
-  }
   .home p {
-    right: unset;
-    text-align: center;
+    right: 10%;
   }
   .home-social-icons {
     display: none;
+  }
+  .downArrow {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 787px) {
+  .home h1 {
+    left: 5%;
+    font-size: 3rem;
+  }
+  .home p {
+    left: 5%;
   }
   .downArrow {
     right: 47%;
@@ -311,10 +279,10 @@ a {
 }
 @media screen and (max-width: 500px) {
   .home {
-    background-position: center;
+    background-position: -200px;
   }
   .home h1 {
-    right: unset;
+    left: unset;
     text-align: center;
     font-size: 2rem;
   }
@@ -639,6 +607,7 @@ a {
   font-size: 28px;
 }
 .navbar ul {
+  font-weight: bold;
   width: 35%;
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -652,7 +621,6 @@ a {
   cursor: pointer;
 }
 .navbar ul li:hover {
-  font-weight: bolder;
   background: linear-gradient(to right, var(--gradient-primary-color), var(--gradient-secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -819,7 +787,7 @@ a {
 .edu-para:nth-child(3) {
   top: 690px;
 }
-@media screen and (max-width:1385px) {
+@media screen and (max-width: 1385px) {
   .timeline {
     height: 78vh;
   }
@@ -842,12 +810,12 @@ a {
     top: 630px;
   }
 }
-@media screen and (max-width:912px) {
+@media screen and (max-width: 912px) {
   .edu-para {
     left: 25% !important;
   }
 }
-@media screen and (max-width:674px) {
+@media screen and (max-width: 674px) {
   .timeline {
     left: 10%;
   }
@@ -855,7 +823,7 @@ a {
     left: 40% !important;
   }
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
   .timeline {
     left: 2%;
   }

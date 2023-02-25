@@ -1,88 +1,88 @@
 .experience {
-  min-height: 30vh;
-  overflow: hidden;
-  width: 100vw;
-  position: relative;
-  padding: 20px 0px;
+    min-height: 30vh;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    padding: 20px 0px;
 }
 .experience .outline-text {
-  left: 2rem;
-  top: 7rem;
+    left: 2rem;
+    top: 7rem;
 }
 .exp-main {
-  width: 50vw;
+    width: 50vw;
 }
 .exp-main-para {
-  width: 90%;
+    width: 90%;
 }
 .exp-points {
-  position: relative;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 60vh;
-  font-family: var(--secondary-font);
-  letter-spacing: normal;
-  line-height: 2;
-  width: 50vw;
-  overflow: auto;
-  overflow-x: hidden;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 60vh;
+    font-family: var(--secondary-font);
+    letter-spacing: normal;
+    line-height: 2;
+    width: 50vw;
+    overflow: auto;
+    overflow-x: hidden;
 }
 .object {
-  width: 10%;
+    width: 10%;
 }
 .experience .line {
-  width: 0;
-  border: 1px dashed black;
-  height: 15rem;
-  position: absolute;
-  top: 3rem;
-  left: 2.4vw;
-  z-index: -1;
+    width: 0;
+    border: 1px dashed black;
+    height: 15rem;
+    position: absolute;
+    top: 3rem;
+    left: 2.4vw;
+    z-index: -1;
 }
 .exp-box {
-  width: 50vw;
-  justify-content: flex-start;
-  margin: 50px auto;
-  position: relative;
+    width: 50vw;
+    justify-content: flex-start;
+    margin: 50px auto;
+    position: relative;
 }
 .exp-para {
-  width: 80%;
-  margin-left: 30px;
-  align-items: flex-start;
+    width: 80%;
+    margin-left: 30px;
+    align-items: flex-start;
 }
 @media screen and (max-width: 1155px) {
-  .experience {
-    flex-direction: column;
-  }
-  .exp-main {
-    width: 90vw;
-  }
-  .exp-main h1 {
-    width: fit-content;
-  }
-  .exp-points {
-    width: 90vw;
-  }
-  .exp-box {
-    width: 90vw;
-  }
-  .experience .line {
-    margin-left: 2vw;
-  }
+    .experience {
+        flex-direction: column;
+    }
+    .exp-main {
+        width: 90vw;
+    }
+    .exp-main h1 {
+        width: fit-content;
+    }
+    .exp-points {
+        width: 90vw;
+    }
+    .exp-box {
+        width: 90vw;
+    }
+    .experience .line {
+        margin-left: 2vw;
+    }
 }
 
 @media screen and (max-width: 560px) {
-  .experience {
-    padding-top: 2rem;
-  }
-  .exp-points h1 {
-    font-size: 20px;
-  }
-  .exp-para > div {
-    font-size: 15px;
-  }
-  .experience .outline-text {
-    left: 3rem;
-    top: 0rem;
-  }
+    .experience {
+        padding-top: 2rem;
+    }
+    .exp-points h1 {
+        font-size: 20px;
+    }
+    .exp-para > div {
+        font-size: 15px;
+    }
+    .experience .outline-text {
+        left: 3rem;
+        top: 0rem;
+    }
 }

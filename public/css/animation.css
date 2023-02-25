@@ -1,48 +1,48 @@
 .move-up {
-  animation: move-up 1s ease-in -0.2s 1;
-  -webkit-animation: move-up 1s ease-in -0.2s 1;
+    animation: move-up 1s ease-in -0.2s 1;
+    -webkit-animation: move-up 1s ease-in -0.2s 1;
 }
 @keyframes move-up {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-    -webkit-transform: translateY(100px);
-    -moz-transform: translateY(100px);
-    -ms-transform: translateY(100px);
-    -o-transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
 }
 .animate-shadow {
-  animation: animate-shadow 2s ease-in-out infinite;
-  -webkit-animation: animate-shadow 2s ease-in-out infinite;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
+    animation: animate-shadow 2s ease-in-out infinite;
+    -webkit-animation: animate-shadow 2s ease-in-out infinite;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 @keyframes animate-shadow {
-  0% {
-    background-color: rgba(0, 0, 0, 0.659);
-  }
-  10% {
-    background-color: rgba(0, 0, 0, 0.512);
-  }
-  20% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.659);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.659);
-  }
+    0% {
+        background-color: rgba(0, 0, 0, 0.659);
+    }
+    10% {
+        background-color: rgba(0, 0, 0, 0.512);
+    }
+    20% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.659);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.659);
+    }
 }

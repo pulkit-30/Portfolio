@@ -1,13 +1,17 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "author": "Pulkit",
-  "description": "Pulkit Gupta's Portfolio",
-  "scripts": {
-    "build": "esbuild ./public/css/main.css  --bundle --outfile=build/build_out.css --loader:.webp=file && esbuild ./public/js/main.js  --bundle --outfile=build/build_out.js"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "esbuild": "^0.17.10"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "author": "Pulkit",
+    "description": "Pulkit Gupta's Portfolio",
+    "scripts": {
+        "format": "yarn prettier --write .",
+        "build": "esbuild ./public/css/main.css  --bundle --outfile=build/build_out.css --loader:.jpeg=file && esbuild ./public/js/main.js  --bundle --outfile=build/build_out.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "esbuild": "^0.17.10"
+    },
+    "devDependencies": {
+        "prettier": "2.8.4"
+    }
 }
