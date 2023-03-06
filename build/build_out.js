@@ -27,9 +27,9 @@
       hamburger.addEventListener("click", handelMenuDisplay);
       doc.querySelector(".backdrop").addEventListener("click", handelMenuDisplay);
       var HandelNavBarDisplay = () => {
-        if (window.pageYOffset > 380)
+        if (window.pageYOffset > 50)
           navbar.classList.add("b-nav");
-        if (window.pageYOffset < 380)
+        if (window.pageYOffset < 50)
           navbar.classList.remove("b-nav");
       };
       HandelNavBarDisplay();
