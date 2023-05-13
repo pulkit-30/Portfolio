@@ -193,7 +193,7 @@ a {
   right: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.923));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.950));
   z-index: 0;
 }
 .home h1 {
@@ -345,8 +345,8 @@ a {
 
 /* public/css/skill.css */
 .skill {
-  padding-top: 5rem;
-  margin: 7rem 0px;
+  padding-top: 2rem;
+  margin: 3rem 0px;
   position: relative;
 }
 .skill .outline-text {
@@ -457,7 +457,7 @@ a {
   -o-transition: 0.2s;
 }
 .cpy {
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 15px;
   position: relative;
   top: 40px;
